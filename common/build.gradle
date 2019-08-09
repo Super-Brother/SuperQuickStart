@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.wenchao'
 
 android {
     compileSdkVersion 29
@@ -15,6 +17,10 @@ android {
 
     }
 
+    dataBinding {
+        enabled true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,10 +31,35 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'androidx.appcompat:appcompat:1.0.2'
+    //rxjava
+    api 'io.reactivex.rxjava2:rxjava:2.2.3'
+    api 'io.reactivex.rxjava2:rxjava:2.2.3'
+    //rx系列与View生命周期同步
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.2.2'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
+    //rxbinding
+    api 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
+    //rx 6.0权限请求
+    api 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //network
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.retrofit2:converter-gson:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    //glide图片加载
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    api 'com.github.bumptech.glide:compiler:4.8.0'
+    //json解析
+    api 'com.google.code.gson:gson:2.8.5'
+    //material-dialogs
+    api 'com.afollestad.material-dialogs:core:0.9.4.5'
+    api 'com.afollestad.material-dialogs:commons:0.9.4.5'
+    //recyclerview的databinding套装
+    api 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:2.2.0'
+    api 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:2.2.0'
+    //Google AAC
+    api 'android.arch.lifecycle:extensions:1.1.1'
+    api 'android.arch.lifecycle:compiler:1.1.1'
 }
