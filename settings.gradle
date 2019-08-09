@@ -1,1 +1,1 @@
-include ':app', ':livedatabus'
+include ':app', ':livedatabus', ':common'
