@@ -1,13 +1,14 @@
 package com.wenchao.common.binding.viewadapter.edittext;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
+import androidx.databinding.BindingAdapter;
+
+import com.wenchao.common.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/16.

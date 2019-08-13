@@ -2,13 +2,21 @@ package com.example.superquickstart;
 
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.superquickstart.databinding.ActivityMainBinding;
+import com.wenchao.common.BR;
+import com.wenchao.common.base.BaseActivity;
+
+public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel> {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int initContentView(Bundle savedInstanceState) {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public int initVariableId() {
+        return BR.mainModel;
     }
 }

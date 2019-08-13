@@ -1,11 +1,12 @@
 package com.wenchao.common.binding.viewadapter.radiogroup;
 
-import android.databinding.BindingAdapter;
-import android.support.annotation.IdRes;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
+import androidx.annotation.IdRes;
+import androidx.databinding.BindingAdapter;
+
+import com.wenchao.common.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/18.

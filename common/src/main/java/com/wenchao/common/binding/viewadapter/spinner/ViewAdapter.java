@@ -1,16 +1,17 @@
 package com.wenchao.common.binding.viewadapter.spinner;
 
-import android.databinding.BindingAdapter;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import androidx.databinding.BindingAdapter;
+
+import com.wenchao.common.binding.command.BindingCommand;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/18.

@@ -1,8 +1,9 @@
 package com.wenchao.common.binding.viewadapter.webview;
 
-import android.databinding.BindingAdapter;
 import android.text.TextUtils;
 import android.webkit.WebView;
+
+import androidx.databinding.BindingAdapter;
 
 /**
  * Created by goldze on 2017/6/18.

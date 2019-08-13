@@ -3,20 +3,20 @@ package com.wenchao.common.utils;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.GravityEnum;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
+import com.wenchao.common.R;
 
 import java.util.List;
-
-import me.goldze.mvvmhabit.R;
 
 
 /**

@@ -50,7 +50,7 @@ dependencies {
     api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
     //glide图片加载
     api 'com.github.bumptech.glide:glide:4.8.0'
-    api 'com.github.bumptech.glide:compiler:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
     //json解析
     api 'com.google.code.gson:gson:2.8.5'
     //material-dialogs
@@ -61,5 +61,5 @@ dependencies {
     api 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:2.2.0'
     //Google AAC
     api 'android.arch.lifecycle:extensions:1.1.1'
-    api 'android.arch.lifecycle:compiler:1.1.1'
+    annotationProcessor 'android.arch.lifecycle:compiler:1.1.1'
 }

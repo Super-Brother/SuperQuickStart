@@ -1,12 +1,8 @@
 package com.wenchao.common.utils;
+
 import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
@@ -14,6 +10,12 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 
 import java.lang.ref.WeakReference;
 
@@ -82,7 +84,9 @@ public final class ToastUtils {
                 return view;
             }
         }
-        if (sToast != null) return sToast.getView();
+        if (sToast != null) {
+            return sToast.getView();
+        }
         return null;
     }
 

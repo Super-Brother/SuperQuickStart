@@ -1,14 +1,15 @@
 package com.wenchao.common.binding.viewadapter.recyclerview;
 
-import android.databinding.BindingAdapter;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.databinding.BindingAdapter;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.wenchao.common.binding.command.BindingCommand;
 
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.functions.Consumer;
 import io.reactivex.subjects.PublishSubject;
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/16.

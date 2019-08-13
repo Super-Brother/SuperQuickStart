@@ -1,10 +1,11 @@
 package com.wenchao.common.binding.viewadapter.checkbox;
 
-import android.databinding.BindingAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
+import androidx.databinding.BindingAdapter;
+
+import com.wenchao.common.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/16.

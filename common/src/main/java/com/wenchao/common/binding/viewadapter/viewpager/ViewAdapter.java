@@ -1,9 +1,9 @@
 package com.wenchao.common.binding.viewadapter.viewpager;
 
-import android.databinding.BindingAdapter;
-import android.support.v4.view.ViewPager;
+import androidx.databinding.BindingAdapter;
+import androidx.viewpager.widget.ViewPager;
 
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
+import com.wenchao.common.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/18.

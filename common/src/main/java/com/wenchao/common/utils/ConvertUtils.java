@@ -10,15 +10,15 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
+import com.wenchao.common.utils.constant.MemoryConstants;
+import com.wenchao.common.utils.constant.TimeConstants;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
-
-import me.goldze.mvvmhabit.utils.constant.MemoryConstants;
-import me.goldze.mvvmhabit.utils.constant.TimeConstants;
 
 /**
  * Created by goldze on 2017/5/14.
@@ -41,9 +41,13 @@ public final class ConvertUtils {
      * @return 16进制大写字符串
      */
     public static String bytes2HexString(final byte[] bytes) {
-        if (bytes == null) return null;
+        if (bytes == null) {
+            return null;
+        }
         int len = bytes.length;
-        if (len <= 0) return null;
+        if (len <= 0) {
+            return null;
+        }
         char[] ret = new char[len << 1];
         for (int i = 0, j = 0; i < len; i++) {
             ret[j++] = hexDigits[bytes[i] >>> 4 & 0x0f];
@@ -114,9 +118,13 @@ public final class ConvertUtils {
      * @return 字符数组
      */
     public static char[] bytes2Chars(final byte[] bytes) {
-        if (bytes == null) return null;
+        if (bytes == null) {
+            return null;
+        }
         int len = bytes.length;
-        if (len <= 0) return null;
+        if (len <= 0) {
+            return null;
+        }
         char[] chars = new char[len];
         for (int i = 0; i < len; i++) {
             chars[i] = (char) (bytes[i] & 0xff);

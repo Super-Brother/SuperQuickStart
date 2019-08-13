@@ -1,9 +1,9 @@
 package com.wenchao.common.binding.viewadapter.swiperefresh;
 
-import android.databinding.BindingAdapter;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.databinding.BindingAdapter;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
+import com.wenchao.common.binding.command.BindingCommand;
 
 
 /**

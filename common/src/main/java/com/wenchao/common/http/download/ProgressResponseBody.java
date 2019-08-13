@@ -1,8 +1,9 @@
 package com.wenchao.common.http.download;
 
+import com.wenchao.common.bus.RxBus;
+
 import java.io.IOException;
 
-import me.goldze.mvvmhabit.bus.RxBus;
 import okhttp3.MediaType;
 import okhttp3.ResponseBody;
 import okio.Buffer;

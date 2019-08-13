@@ -1,16 +1,18 @@
 package com.wenchao.common.binding.viewadapter.listview;
 
-import android.databinding.BindingAdapter;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.databinding.BindingAdapter;
+
+import com.wenchao.common.binding.command.BindingCommand;
+
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.functions.Consumer;
 import io.reactivex.subjects.PublishSubject;
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/18.

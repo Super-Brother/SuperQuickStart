@@ -1,14 +1,15 @@
 package com.wenchao.common.binding.viewadapter.view;
 
-import android.databinding.BindingAdapter;
 import android.view.View;
 
+import androidx.databinding.BindingAdapter;
+
 import com.jakewharton.rxbinding2.view.RxView;
+import com.wenchao.common.binding.command.BindingCommand;
 
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.functions.Consumer;
-import me.goldze.mvvmhabit.binding.command.BindingCommand;
 
 /**
  * Created by goldze on 2017/6/16.
